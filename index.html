@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VA (BY ANKIT)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/nolan/64/siri.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-4 text-center">KIVA🦹🏻‍♂️</h1>
+      <button id="speakButton" class="disabled">
+        <i class="fa fa-microphone"></i>
+      </button>
+    </div>
+    <div class="container input-group">
+      <input
+        type="text"
+        id="textInput"
+        class="form-control"
+        placeholder="Type command"
+      />
+      <div class="input-group-append">
+        <button id="executeButton" class="btn btn-primary">Execute</button>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="text-left">
+        <span id="youIntent" class="text-success"></span>
+        <span id="youQuery" class="text-primary"></span>
+      </h1>
+      <h1 id="botAnswer" class="text-right text-info"></h1>
+    </div>
+    <div
+      class="container d-flex justify-content-center align-items-center disabled"
+      id="embeddedDiv"
+    ></div>
+    <div class="container">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Command</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>KIVA [QUESTION]</td>
+            <td>Wolfram Alpha: Answer summary</td>
+          </tr>
+          <tr>
+            <td>article [KEYWORDS]</td>
+            <td>Wikipedia: One sentence explanation</td>
+          </tr>
+          <tr>
+            <td>weather [LOCATION]</td>
+            <td>OpenWeatherMap: Description and temperature</td>
+          </tr>
+          <tr>
+            <td>dictionary [WORD]</td>
+            <td>Oxford Dictionary: Word definition</td>
+          </tr>
+          <tr>
+            <td>video [KEYWORDS]</td>
+            <td>YouTube: Embedded video</td>
+          </tr>
+          <tr>
+            <td>map [LOCATION]</td>
+            <td>Google Maps: Embedded map</td>
+          </tr>
+          <tr>
+            <td>
+              translate [<a
+                target="_blank"
+                >TARGET_2LETTER</a
+              >] [TEXT]
+            </td>
+            <td>Google Translate: Translate text</td>
+          </tr>
+          <tr>
+            <td>search [INPUT]</td>
+            <td>New tab Google search</td>
+          </tr>
+          <tr>
+            <td>webcam</td>
+            <td>Face: Analyze age, gender, expressions</td>
+          </tr>
+          <tr>
+            <td>location</td>
+            <td>MapQuest: Current location</td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td>Current time</td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>Current date</td>
+          </tr>
+          <tr>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container text-center bg-primary">
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/ankits15/"
+      >
+        <p class="lead text-white">MADE BY ANKIT</p>
+      </a>
+    </div>
+  </body>
+</html>

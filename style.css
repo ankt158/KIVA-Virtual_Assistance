@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#speakButton {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 0;
+  border-radius: 50%;
+  padding: 0.25em 1em;
+  margin: 1.5em auto;
+  text-align: center;
+  color: #fff;
+  background: deepskyblue;
+  box-shadow: 2px 5px 30px skyblue;
+
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+#speakButton .fa {
+  font-size: 80px;
+  line-height: 150px;
+  margin: 0;
+  text-shadow: 1px 2px 2px lightgrey;
+}
+#speakButton:hover {
+  transform: scale(0.92);
+}
+#speakButton:active {
+  filter: brightness(0.8);
+}
+#speakButton:focus {
+  outline: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}
+.fa-github::before {
+  content: "\f09b";
+}
+
+.disabled {
+  display: none !important;
+}
+
+canvas {
+  position: absolute;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
